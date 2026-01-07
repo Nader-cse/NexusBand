@@ -158,3 +158,27 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
 .modal .btn-row{display:flex;gap:10px;justify-content:flex-end;margin-top:16px}
 .modal .close-btn{background:transparent;border:1px solid rgba(255,255,255,.06);color:var(--text);padding:10px 14px;border-radius:10px}
 .modal .confirm-btn{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#050816;border:none;padding:10px 14px;border-radius:10px;font-weight:600}
+
+/* Responsive Improvements */
+@media(max-width:900px){
+  .hero .wrap{grid-template-columns:1fr; gap:20px}
+  .hero h1{font-size:42px; line-height:1.2}
+  .hero p{max-width:100%}
+  
+  .about{grid-template-columns:1fr; gap:20px}
+  .grid{grid-template-columns:1fr 1fr; gap:16px}
+  .portfolio{grid-template-columns:1fr 1fr; gap:16px}
+  .product-section{grid-template-columns:1fr; gap:20px}
+  form{grid-template-columns:1fr; gap:12px}
+  .summary-grid{grid-template-columns:1fr}
+  .dashboard-header{flex-direction:column;align-items:flex-start;gap:12px}
+}
+
+@media(max-width:600px){
+  .menu{display:none} /* Mobile menu toggle needed via JS */
+  .hero h1{font-size:36px}
+  .hero p{font-size:14px}
+  .grid,.portfolio{grid-template-columns:1fr; gap:12px}
+  form{grid-template-columns:1fr; gap:12px}
+  .product-section{gap:16px}
+}
