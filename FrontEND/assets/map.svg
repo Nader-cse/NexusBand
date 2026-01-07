@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-labelledby="mapTitle mapDesc">
+  <title id="mapTitle">Mock map</title>
+  <desc id="mapDesc">Stylized mock map showing a location pin for demo purposes</desc>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1">
+      <stop offset="0%" stop-color="#6c7cff"/>
+      <stop offset="100%" stop-color="#00e5ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="100%" height="100%" fill="#0f1430"/>
+  <!-- roads -->
+  <g stroke="#122038" stroke-width="12" stroke-linecap="round">
+    <path d="M80 380 C200 320 400 420 600 360 S1000 280 1120 340" fill="none" opacity="0.8"/>
+    <path d="M200 220 C340 180 520 260 760 210 S1040 160 1120 200" fill="none" opacity="0.7"/>
+  </g>
+  <!-- blocks -->
+  <g fill="#0b0f1a" stroke="#172033">
+    <rect x="60" y="60" width="140" height="80" rx="8"/>
+    <rect x="220" y="90" width="160" height="60" rx="8"/>
+    <rect x="420" y="70" width="220" height="100" rx="8"/>
+    <rect x="720" y="120" width="220" height="80" rx="8"/>
+  </g>
+  <!-- water/park -->
+  <rect x="920" y="380" width="220" height="120" rx="12" fill="#07122a"/>
+  <circle cx="980" cy="420" r="6" fill="#0ff" opacity="0.6"/>
+  <!-- marker -->
+  <g transform="translate(640,320)">
+    <circle cx="0" cy="0" r="28" fill="url(#g)"/>
+    <circle cx="0" cy="0" r="12" fill="#050816"/>
+    <text x="0" y="6" font-family="Poppins, Arial, sans-serif" font-size="10" fill="#fff'" text-anchor="middle">You</text>
+  </g>
+  <!-- caption -->
+  <text x="24" y="560" font-family="Poppins, Arial, sans-serif" font-size="14" fill="#a7b0ff">Mock GPS preview — demo only</text>
+</svg>

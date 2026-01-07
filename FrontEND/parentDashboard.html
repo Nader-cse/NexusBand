@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parent Dashboard | Nexus Band</title>
+  <link rel="stylesheet" href="../styling.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <div class="dashboard-header">
+      <div class="profile-block">
+        <div class="avatar">JD</div>
+        <div>
+          <h3 style="margin:0">Welcome, Parent!</h3>
+          <p style="margin:2px 0;color:var(--muted)">Manage your child's profile and notifications</p>
+        </div>
+      </div>
+      <div class="dashboard-actions">
+        <a href="index.html" class="btn-ghost">Logout</a>
+        <a href="#" class="btn-primary">Contact Support</a>
+      </div>
+    </div>
+
+    <div class="summary-grid">
+      <div class="summary-card">
+        <h4>Alerts</h4>
+        <p>No recent alerts</p>
+      </div>
+      <div class="summary-card">
+        <h4>Profile</h4>
+        <p>Last updated: 3 days ago</p>
+      </div>
+    </div>
+
+    <section style="margin-top:20px">
+      <h3>Child Information</h3>
+      <div class="child-card">
+        <div class="info">
+          <p><strong>Name:</strong> John Doe</p>
+          <p><strong>Age:</strong> 8</p>
+          <p><strong>Address:</strong> 123 Main Street</p>
+          <p><strong>Medical Conditions:</strong> None</p>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:20px">
+      <h3>Location</h3>
+      <div class="map-placeholder">
+        <img src="./assets/map.svg" alt="Child location (mock)" class="map-image" />
+      </div>
+    </section>
+  </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child Safety Profile | Nexus Band</title>
+  <link rel="stylesheet" href="styling.css">
+
+  <style>
+    body{
+      font-family:'Poppins',sans-serif;
+      background:linear-gradient(180deg,#090d18,#0b0f1a);
+      color:#e8ecff;
+      margin:0;
+      padding:20px;
+    }
+
+    /* wrapper جديد */
+    .qr-wrapper{
+      display:flex;
+      gap:30px;
+      justify-content:center;
+      align-items:flex-start;
+      flex-wrap:wrap; /* مهم للموبايل */
+    }
+
+    .qr-container{
+      max-width:500px;
+      width:100%;
+      background:#11162a;
+      border-radius:20px;
+      padding:30px;
+      box-shadow:0 20px 50px rgba(0,0,0,.5);
+    }
+
+    h2{
+      text-align:center;
+      margin-bottom:20px;
+    }
+
+    .info p{
+      margin:10px 0;
+    }
+
+    .info span{
+      color:#a7b0ff;
+      font-weight:600;
+    }
+
+    .btn-call{
+      display:block;
+      text-align:center;
+      margin-top:20px;
+      padding:14px;
+      border-radius:30px;
+      background:linear-gradient(90deg,#6c7cff,#00e5ff);
+      color:#050816;
+      font-weight:600;
+      text-decoration:none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- WRAPPER -->
+  <div class="qr-wrapper">
+
+    <!-- ENGLISH CARD -->
+    <div class="qr-container">
+      <h2>Child Safety Profile</h2>
+
+      <div class="info">
+        <p><span>Name:</span> Adam Mohamed</p>
+        <p><span>Age:</span> 7 years</p>
+        <p><span>Medical Conditions:</span> Asthma</p>
+        <p><span>Home Address:</span> Cairo, Egypt</p>
+        <p><span>School:</span> Sunshine Elementary</p>
+        <p><span>Parent Phone:</span> +201125866276</p>
+        <p><span>Additional Notes:</span> Allergic to peanuts</p>
+      </div>
+
+      <a href="tel:+201125866276" class="btn-call">📞 Call Parent</a>
+    </div>
+
+    <!-- ARABIC CARD -->
+    <div class="qr-container">
+      <h2>بيانات أمان الطفل</h2>
+
+      <div class="info">
+        <p><span>الاسم:</span> آدم محمد</p>
+        <p><span>العمر:</span> 7 سنوات</p>
+        <p><span>الحالة الصحية:</span> ربو</p>
+        <p><span>عنوان السكن:</span> القاهرة، مصر</p>
+        <p><span>المدرسة:</span> مدرسة صن شاين الابتدائية</p>
+        <p><span>هاتف ولي الأمر:</span> +201125866276</p>
+        <p><span>ملاحظات إضافية:</span> لديه حساسية من الفول السوداني</p>
+      </div>
+
+      <a href="tel:+201125866276" class="btn-call">📞 الاتصال بولي الأمر</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
