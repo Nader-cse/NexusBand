@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nexus Band | Connecting Innovation with Excellence</title>
+  <meta name="description" content="Nexus Band is a professional digital company connecting innovation with excellence." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="FrontEND/styling" />
+  <style>
+    :root{
+      --bg:#0b0f1a;
+      --card:#11162a;
+      --accent:#6c7cff;
+      --accent-2:#00e5ff;
+      --text:#e8ecff;
+      --muted:#a7b0ff;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Poppins',sans-serif;background:linear-gradient(180deg,#090d18, #0b0f1a 40%);color:var(--text)}
+    a{text-decoration:none;color:inherit}
+
+    /* NAV */
+    .nav{position:sticky;top:0;z-index:50;background:rgba(11,15,26,.8);backdrop-filter: blur(10px);border-bottom:1px solid rgba(255,255,255,.05)}
+    .nav .wrap{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between;padding:14px 20px}
+    .logo{font-weight:700;font-size:22px;letter-spacing:.5px}
+    .logo span{color:var(--accent)}
+    .menu{display:flex;gap:22px}
+    .menu a{font-size:14px;color:var(--muted)}
+    .menu a:hover{color:#fff}
+
+    /* HERO */
+    .hero{min-height:90vh;display:flex;align-items:center}
+    .hero .wrap{max-width:1200px;margin:auto;padding:0 20px;display:grid;grid-template-columns:1.2fr .8fr;gap:40px}
+    .hero h1{font-size:52px;line-height:1.1}
+    .hero h1 span{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{margin:18px 0 28px;color:var(--muted);max-width:520px}
+    .btn{display:inline-block;padding:14px 26px;border-radius:30px;background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#050816;font-weight:600}
+    .btn.alt{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.2)}
+    .btn:hover{opacity:.9}
+    .hero-card{background:radial-gradient(120% 120% at 10% 10%,#1b2250, #0f1430);border:1px solid rgba(255,255,255,.08);border-radius:22px;padding:26px;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+
+    /* SECTIONS */
+    section{padding:90px 20px}
+    .wrap{max-width:1200px;margin:auto}
+    .title{font-size:34px;margin-bottom:12px}
+    .sub{color:var(--muted);margin-bottom:40px}
+
+    /* ABOUT */
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+    .about .box{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:26px}
+
+    /* SERVICES */
+    .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+    .card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:18px;padding:26px;transition:.3s}
+    .card:hover{transform:translateY(-6px);border-color:rgba(108,124,255,.5)}
+    .icon{font-size:26px;margin-bottom:10px}
+
+    /* PORTFOLIO */
+    .portfolio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+    .project{position:relative;overflow:hidden;border-radius:18px;background:#0f1430;border:1px solid rgba(255,255,255,.06)}
+    .project .overlay{position:absolute;inset:0;background:linear-gradient(180deg,transparent,rgba(0,0,0,.8));display:flex;align-items:flex-end;padding:18px;opacity:0;transition:.3s}
+    .project:hover .overlay{opacity:1}
+
+    /* CONTACT */
+    form{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    form input, form textarea{background:#0e1330;border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:14px;color:#fff}
+    form textarea{grid-column:1/-1;min-height:120px}
+
+    /* FOOTER */
+    footer{padding:30px 20px;border-top:1px solid rgba(255,255,255,.06);color:var(--muted)}
+    footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px}
+
+    /* RESPONSIVE */
+    @media(max-width:900px){
+      .hero .wrap{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr 1fr}
+      .portfolio{grid-template-columns:1fr 1fr}
+    }
+    @media(max-width:600px){
+      .menu{display:none}
+      .hero h1{font-size:40px}
+      .grid,.portfolio{grid-template-columns:1fr}
+      form{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="wrap">
+      <div class="logo">Nexus <span>Band</span></div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+         <a href="login.html">Parent Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="wrap">
+      <div>
+        <h1>Connecting <span>Innovation</span><br/>with Excellence</h1>
+        <p>Nexus Band is a smart safety band for children, designed to keep them safe by storing essential information including medical details and parental contacts via a secure QR code.</p>
+        <a class="btn" href="#contact">Get Started</a>
+        <a class="btn alt" href="#services" style="margin-left:10px">Our Services</a>
+      </div>
+      <div class="hero-card">
+        <h3>Why Nexus Band?</h3>
+        <p style="color:var(--muted)">We combine strategy, design, and technology to deliver high‑quality results for modern businesses.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="wrap">
+      <h2 class="title">About Us</h2>
+      <p class="sub">Professional. Reliable. Future‑Focused.</p>
+      <div class="about">
+        <div class="box">
+          <h3>Who We Are</h3>
+          <p>Nexus Band is a creative and tech‑driven company dedicated to helping brands grow through innovative digital solutions.</p>
+        </div>
+        <div class="box">
+          <h3>Our Mission</h3>
+          <p>To deliver modern, scalable, and elegant solutions that create real value and long‑term success.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="wrap">
+      <h2 class="title">What We Offer</h2>
+      <p class="sub">Smart safety solutions for your children</p>
+      <div class="grid">
+        <div class="card"><div class="icon">🧒</div><h4>Child Safety Bands</h4><p>Comfortable and durable bands designed especially for children.</p></div>
+        <div class="card"><div class="icon">🔗</div><h4>Unique QR Code</h4><p>Each band contains a unique QR code linked to the child’s information.</p></div>
+        <div class="card"><div class="icon">📱</div><h4>No App Needed</h4><p>Scan the QR code with any smartphone camera.</p></div>
+        <div class="card"><div class="icon">🚨</div><h4>Emergency Ready</h4><p>Instant access to parents’ contact details in emergencies.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="wrap">
+      <h2 class="title">How It Works</h2>
+      <p class="sub">Simple steps to keep your child safe</p>
+      <div class="grid">
+        <div class="card"><div class="icon">🛒</div><h4>1. Order the Band</h4><p>Parents place an order for a Nexus Band through our website.</p></div>
+        <div class="card"><div class="icon">🧾</div><h4>2. QR Code Creation</h4><p>We generate a unique QR code containing the child’s essential information.</p></div>
+        <div class="card"><div class="icon">⌚</div><h4>3. Child Wears the Band</h4><p>The child wears the band comfortably every day.</p></div>
+        <div class="card"><div class="icon">📞</div><h4>4. Scan & Contact</h4><p>Anyone can scan the QR code to instantly reach the parents.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO -->
+  <section id="portfolio">
+    <div class="wrap">
+      <h2 class="title">Portfolio</h2>
+      <p class="sub">Selected projects</p>
+      <div class="portfolio">
+        <div class="project"><div class="overlay">Project One</div></div>
+        <div class="project"><div class="overlay">Project Two</div></div>
+        <div class="project"><div class="overlay">Project Three</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section id="order">
+    <div class="wrap">
+      <h2 class="title">Order a Nexus Band</h2>
+      <p class="sub">Protect your child with a smart QR band</p>
+      <form onsubmit="event.preventDefault();alert('Order submitted successfully!');">
+        <input type="text" placeholder="Parent Full Name" required>
+        <input type="tel" placeholder="Phone Number" required>
+        <input type="email" placeholder="Email Address" required>
+        <input type="text" placeholder="Child Name" required>
+        <input type="number" placeholder="Child Age" required>
+        <input type="text" placeholder="Home Address" required>
+        <textarea placeholder="Medical Conditions (if any)"></textarea>
+        <textarea placeholder="Additional Notes"></textarea>
+        <button class="btn" type="submit">Place Order</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap">
+      <h2 class="title">Contact Us</h2>
+      <p class="sub">Have questions? We're here to help</p>
+      <form onsubmit="event.preventDefault();alert('Message sent!');">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea placeholder="Your Message"></textarea>
+        <button class="btn" type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="wrap">
+      <p>© 2025 Nexus Band. All rights reserved.</p>
+      <p>Connecting Innovation with Excellence</p>
+    </div>
+  </footer>
+
+</body>
+</html>
