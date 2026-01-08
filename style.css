@@ -182,3 +182,48 @@ footer .wrap{display:flex;justify-content:space-between;align-items:center;flex-
   form{grid-template-columns:1fr; gap:12px}
   .product-section{gap:16px}
 }
+
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: var(--text);
+  border-radius: 2px;
+}
+
+/* Mobile menu */
+@media(max-width:600px){
+  .menu {
+    display: none; /* مخفي افتراضياً */
+    position: absolute;
+    top: 60px; /* تحت nav */
+    left: 0;
+    width: 100%;
+    background: rgba(11,15,26,0.95);
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 0;
+    border-top: 1px solid rgba(255,255,255,.05);
+    z-index: 100;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* تعديل select عشان يظهر صح على الموبايل */
+  .menu select {
+    width: 80%;
+  }
+}
